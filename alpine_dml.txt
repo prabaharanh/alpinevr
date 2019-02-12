@@ -1,0 +1,5 @@
+
+
+UPDATE `tblvehicle` SET `Make`= 'BMW',`Model`='Sedan',`Type`='Sedan',`Odometer`=45670900,`available`=1,`cost`=890,`availablefrom`= 12-12-2018,`availableto`=12-12-2019,`imgname`='cars.png' WHERE `Licensenumber`= 1234;
+
+Delete from 'tblvehicle' WHERE `Licensenumber`= 1234;

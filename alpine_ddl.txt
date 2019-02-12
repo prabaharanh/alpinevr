@@ -1,0 +1,34 @@
+CREATE TABLE `tblvehicle` (
+ `Make` text NOT NULL,
+ `Model` varchar(10) NOT NULL,
+ `Type` text NOT NULL,
+ `Odometer` int(6) NOT NULL,
+ `Licensenumber` varchar(10) NOT NULL,
+ `available` tinyint(1) DEFAULT NULL,
+ `cost` int(4) DEFAULT NULL,
+ `availablefrom` date DEFAULT NULL,
+ `availableto` date DEFAULT NULL,
+ `imgname` varchar(50) DEFAULT NULL,
+ `longitude` float DEFAULT NULL,
+ `latitude` float DEFAULT NULL,
+ UNIQUE KEY `Licensenumber` (`Licensenumber`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1
+
+
+
+CREATE TABLE `tbluser` (
+ `Email` varchar(20) NOT NULL,
+ `Password` varchar(20) NOT NULL,
+ `Firstname` text NOT NULL,
+ `Lastname` text NOT NULL,
+ `DOB` date NOT NULL,
+ `Licensenumber` varchar(8) NOT NULL,
+ `DOE` date NOT NULL,
+ `Phonenumber` int(10) NOT NULL,
+ `street` varchar(20) DEFAULT NULL,
+ `suburb` varchar(8) DEFAULT NULL,
+ `city` tinytext,
+ `postal` int(8) DEFAULT NULL,
+ `Longitude` double(10,2) DEFAULT NULL,
+ `latitude` double(10,6) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1
